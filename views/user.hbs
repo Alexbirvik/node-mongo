@@ -1,0 +1,30 @@
+<h2>Single USER</h2>
+
+<form action="/user" method="GET">
+    <h3>Get user</h3>
+    <div class="input-field">
+        <input placeholder="name" type="text" name="name">
+    </div>
+    <button type="submit" class="btn">Get</button>
+</form>
+
+<ul>
+    <li>
+        <span>{{ foundUser }}</span>
+    </li>
+</ul>
+
+<form action="/user" method="GET">
+    <h3>Get user's text</h3>
+    <div class="input-field">
+        <input placeholder="user_id" type="text" name="user_id">
+    </div>
+    <button type="submit" class="btn">Get</button>
+</form>
+
+<ul>
+    <li>
+        <span>{{ foundText }}</span>
+    </li>
+</ul>
+

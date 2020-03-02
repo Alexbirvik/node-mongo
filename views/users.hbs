@@ -1,0 +1,44 @@
+<h2>ALL USERS</h2>
+
+<div class="row">
+
+<div class="col s5">
+
+    {{#if users.length}}
+    <ul>
+        {{#each users}}
+            <li class="height">
+                <span>{{ @index }}: {{ this }}</span>
+            </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>There are no users!</p>
+    {{/if}}
+</div>
+
+<div class="col s7">
+    {{#if texts.length}}
+    <ul>
+        {{#each texts}}
+            <li class="height">
+                <span>{{ @index }}: {{ this }}</span>
+            </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>There are no texts!</p>
+    {{/if}}
+</div>
+
+</div>
+
+<ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
